@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>問題反饋 / 聯絡表單</h2>
+
+<form id="fb" enctype="multipart/form-data">
+  <input name="name" placeholder="姓名" required /><br/>
+  <input name="email" type="email" placeholder="Email" required /><br/>
+  <textarea name="message" placeholder="問題描述" required></textarea><br/>
+  <input name="image" type="file" accept="image/*" /><br/>
+  <button type="submit">送出</button>
+</form>
+
+<script>
+document.getElementById('fb').addEventListener('submit', async (e) => {
+  e.preventDefault();
+  const form = new FormData(e.target);
+  await fetch("你的Worker網址", { method: "POST", body: form });
+  alert("已送出！");
+});
+</script>
+
+</body>
+</html>
