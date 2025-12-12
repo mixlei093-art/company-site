@@ -1,8 +1,39 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BLRRA CO. LTD | 未來科技</title>
+    <link rel="stylesheet" href="main.css">
+</head>
 <body>
-<h1>BLRRA</h1>
-<p>公司介紹</p>
-<a href="/contact.html">聯絡我們</a>
+
+    <nav class="navbar">
+        <div class="logo">BLRRA</div>
+        <div class="links">
+            <a href="#products">產品</a>
+            <a href="#about">關於我們</a>
+            <a href="#contact" class="btn-primary">聯絡我們</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="container">
+            <h1 class="gradient-text">重新定義<br>數位體驗</h1>
+            <p>Aero Photos · Blrra Music · Roam Wallpaper</p>
+            <button id="exploreBtn" class="btn-glow">開始探索</button>
+        </div>
+    </header>
+
+    <section id="contact" class="contact-section">
+        <h2>與我們聯繫</h2>
+        <form id="contactForm">
+            <input type="email" placeholder="您的 Email" required>
+            <textarea placeholder="請輸入您的訊息..." required></textarea>
+            <button type="submit">發送訊息</button>
+        </form>
+    </section>
+
+    <script src="app.js"></script>
 </body>
 </html>
